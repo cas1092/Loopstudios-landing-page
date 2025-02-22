@@ -105,6 +105,7 @@ button{
     text-transform: uppercase;
     font-weight: 300;
     padding:2rem;
+    bottom:0;
 
 }
 
