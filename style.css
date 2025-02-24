@@ -44,6 +44,7 @@ h1{
     font-weight: 300;
     margin: 12rem 0;
 }
+
 .logo{  
     width:50%
 
@@ -418,6 +419,11 @@ button:hover{
     }
     .nav-bar-mobile{
         display: none;
+    }
+
+    ul{
+        display: inline-flex;
+        gap:2rem
     }
 
 
