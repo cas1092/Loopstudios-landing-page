@@ -23,24 +23,43 @@
   <div class="header">
     <div class="header-head">
       <img class="logo" src="images/logo.svg" alt="Loopstudios logo">
-      <button class="hamburger-menu"><img src="images/icon-hamburger.svg"/></button> 
+      <button class="hamburger-menu" aria-expanded="false" aria-label="Abrir menú de navegación">
+        <img src="images/icon-hamburger.svg" aria-hidden="true"/>
+      </button> 
       <nav class="navigation-bar hidden" >
-        <ul>
+        
           <li><a class="focus-button" href='#'>About</a></li>
           <li><a class="focus-button" href='#'>Careers</a></li>
           <li><a class="focus-button" href='#'>Events</a></li>
           <li><a class="focus-button" href='#'>Products</a></li>
           <li><a class="focus-button" href='#'>Support</a></li>
-        </ul>
+        
+      </nav>
+    </div>
+    <div class="nav-bar-mobile hidden">
+      <div class="head-menu">
+        <img class="logo" src="images/logo.svg" alt="Loopstudios logo">
+        <button class="icon" aria-expanded="false" aria-label="Cierra menú de navegación">
+          <img  src="images/icon-close.svg" aria-hidden="true"/>
+        </button>
+      </div>
+        
+      <nav>
+        <li><a class="focus-button" href='#'>About</a></li>
+        <li><a class="focus-button" href='#'>Careers</a></li>
+        <li><a class="focus-button" href='#'>Events</a></li>
+        <li><a class="focus-button" href='#'>Products</a></li>
+        <li><a class="focus-button" href='#'>Support</a></li>
+      
       </nav>
     </div>
     <h1>Immersive experiences that deliver</h1>
   </div>
   <main>
     <section class="info-container">
-      <picture>
-        <source class="main_img" srcset="images/desktop/image-interactive.jpg" media="(min-width:600px)"/>
-        <img class="main_img" src="images/mobile/image-interactive.jpg" alt="VR demo"/>
+      <picture class="main-img">
+        <source  srcset="images/desktop/image-interactive.jpg" media="(min-width:600px)"/>
+        <img  src="images/mobile/image-interactive.jpg" alt="VR demo"/>
       </picture>
       
       <div class="info">
@@ -121,20 +140,19 @@
   <footer>
     <div class="footer_content">
       <img src="images/logo.svg" alt="Loopstudios logo">
-        <nav class="navigation-bar">
-            <li><a class="focus-button" href='#'>About</a></li>
-            <li><a class="focus-button" href='#'>Careers</a></li>
-            <li><a class="focus-button" href='#'>Events</a></li>
-            <li><a class="focus-button" href='#'>Products</a></li>
-            <li><a class="focus-button" href='#'>Support</a></li>
-        </nav>  
-      </div>
+      <nav class="navigation-bar">
+        <li><a class="focus-button" href='#'>About</a></li>
+        <li><a class="focus-button" href='#'>Careers</a></li>
+        <li><a class="focus-button" href='#'>Events</a></li>
+        <li><a class="focus-button" href='#'>Products</a></li>
+        <li><a class="focus-button" href='#'>Support</a></li>
+      </nav>    
+    </div>
       <div class="logos">
         <a class="focus-button" href='#'><img src="images/icon-twitter.svg" alt="Twitter icon"></a>
         <a class="focus-button" href='#'><img src="images/icon-facebook.svg" alt="Facebook icon"></a>
         <a class="focus-button" href='#'><img src="images/icon-pinterest.svg" alt="Pinterest icon"></a>
         <a class="focus-button" href='#'><img src="images/icon-instagram.svg" alt="Instagram icon"></a>
-
       </div>
       <p>© 2021 Loopstudios. All rights reserved.</p>
       
