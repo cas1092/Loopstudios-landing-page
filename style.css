@@ -4,379 +4,219 @@
     --DarkGray: hsl(0, 0%, 55%);
     --VeryDarkGray: hsl(0, 0%, 41%);
 
-    --background-img:url('images/desktop/image-hero.jpg');
+    
 
-    --deep-earth:url("images/desktop/image-deep-earth.jpg");
-    --nigth-arcade:url("images/desktop/image-night-arcade.jpg");
-    --soccer-team:url("images/desktop/image-soccer-team.jpg");
-    --grid:url("images/desktop/image-grid.jpg");
-    --above:url("images/desktop/image-from-above.jpg");
-    --pocket:url("images/desktop/image-pocket-borealis.jpg");
-    --curiosity:url("images/desktop/image-curiosity.jpg");
-    --fisheye:url("images/desktop/image-fisheye.jpg");
 
+    --background-img:url('images/mobile/image-hero.jpg');
+    
+        
 }
 *{
     box-sizing: border-box;
     
 }
 body{
-    font-size: 15px;
     font-family: 'Josefin Sans';
+}
+.hidden{
+    display:none;
 }
 .header{
     background-image: var(--background-img);
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    padding:5rem;
-
+    background-size:cover;
+    
+    padding:8% 5%;
 }
 .header-head{
-    display:flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    
+ 
 }
-.navigation-bar,
-.navigation-bar-bottom{
-    display: flex;
-    color:white;
-    gap:1rem;
-    font-family: 'Alata';
-}
-.title{
-    color:white;
-    font-family: 'Josefin Sans';
-    border:white 1px solid;
-    font-size: clamp(1.5rem, 4vw, 4rem);
-    font-weight: 300;
+h1{
     text-transform: uppercase;
-    padding:1.5rem;
-    margin:5rem 0;
-    width: 50%;
+    color:white;
+    border:2px white solid;
+    padding:1rem;
+    font-size: 3rem;
+    font-weight: 300;
+    margin: 12rem 0;
+}
+.logo{  
+    width:50%
+
+    
 }
 .info-container{
-    padding:5rem;
-    position:relative;
-    display: flex;
-    justify-content: baseline;
-    color:var(--VeryDarkGray)
-    
+    margin: 15% 5%;
+    text-align: center;
+    color:var(--VeryDarkGray);
 }
-.info{
-    width:50%;
-    background-color: white;
-    font-family: 'Josefin Sans';
-    position:absolute;
-    padding:5rem;
-    right:5rem;
-    bottom:0;
-    font-size: 1.2rem;;
+picture,
+img{
+    width:100%;
+    
+
 }
 h2{
     text-transform: uppercase;
-   
+    font-size: 2rem;
     font-weight: 300;
-    font-size: clamp(1.5rem, 4vw, 3rem);
-    
+    padding:1rem;
     
 }
+p{
+    line-height: 1.5;
+    font-size:1.2rem
+}
+
 .creations-container{
-    padding:5rem;
-      
+    display:grid;
+    grid-template-rows: repeat(10,auto);
+    gap:1rem;
+    padding:5%
+
 }
-.creations-title{
-    display: flex;
-    justify-content: space-between;
-}
-button{
-    text-transform: uppercase;
-    padding:0.5rem 2rem;
-    border:solid black 1px;
-    cursor:pointer;
-}
-.creations-cards{
+.card{
     position:relative;
     color:white;
+    cursor:pointer;
+
 }
-.title-cards{
+.card h2{
     position:absolute;
-    font-size:2rem;
-    text-transform: uppercase;
-    font-weight: 300;
-    padding:2rem;
     bottom:0;
-
 }
 
-.creations-cards,
-.deep-earth,
-.nigth-arcade,
-.soccer-team,
- .grid, 
- .from-above,
- .pocket,
- .curiosity, 
- .fisheye{
-    background-repeat:no-repeat;
-    background-size: cover;
-    position:relative;
 
-}
-.creations-cards{
-    display:grid;
-    grid-template-columns:  repeat(4, 1fr);
-    grid-row: repeat(2, 1fr);
-    gap:2rem;
-    height: 57rem;
-    justify-content: center;
-    margin:3rem 0;
-    position:relative;
+
+.title{
+    grid-row: 1;
+    text-align: center;
+    color:var(--VeryDarkGray);
 }
 .deep-earth{
-    background-image: var(--deep-earth);
-    grid-column: 1;
-    grid-row: 1;
-
+    grid-row: 2;
 }
-.nigth-arcade{
-    background-image: var(--nigth-arcade);
-    grid-column: 2;
-    grid-row: 1;
+.night-arcade{
+    grid-row:3;
 }
 .soccer-team{
-    background-image: var(--soccer-team);
-    grid-column: 3;
-    grid-row: 1;
+    grid-row: 4;
 }
 .grid{
-    background-image: var(--grid);
-    grid-column: 4;
-    grid-row: 1;
+    grid-row: 5;
 }
 .from-above{
-    background-image: var(--above);
-    grid-column: 1;
-    grid-row: 2;
+    grid-row: 6;
 }
 .pocket{
-    background-image: var(--pocket);
-    grid-column: 2;
-    grid-row: 2
+    grid-row: 7;
 }
 .curiosity{
-    background-image: var(--curiosity);
-    grid-column: 3;
-    grid-row: 2;
+    grid-row: 8;
 }
 .fisheye{
-    background-image: var(--fisheye);
-    grid-column: 4;
-    grid-row: 2;
+    grid-row: 9;
 }
 
-.foot{
-    padding:2rem 5rem;
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
+.see-all{
+    grid-row:10;
+
 }
 
-footer{
-    display:flex;
-    flex-direction: column;
-    background-color: black;
-    color:white;
-}
-.footer-head{
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: start;
-    gap:1rem;
-}
-
-.footer-bottom{
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: end;
-    gap:1rem;
-}
-.logos{
-    display:flex;
-    gap:0.5rem;
-}
-
-.focus-button:after, 
-.focus-button:hover, 
-.focus-button:focus{
-    text-decoration: underline;
-    text-decoration-thickness:2px;
-    
-}
-
-
-.title-cards::before,
-.title-cards:focus
+.card::before,
+.card:focus
  {
     content: "";
     position:absolute;
     width: 100%;
-    height: 100%;
+    height: 98%;
     background-color: hsl(from var(--DarkGray) h s l /0.5);
     opacity: 0;
     top:0;
     left:0;
     
   }
-  
-  .title-cards:hover::before {
+
+.card:hover::before {
     opacity: 1;
     bottom: 0rem;
     
   }
-  .title-cards:hover{
+  .card:hover{
     color:black;
     transition: opacity 0.3s ease-in;
     bottom: 0rem;
   }
 
-  button:after, button:hover{
+.see-all{
+    border:solid black 1.5px;
+    text-transform: uppercase;
+    width:max-content;
+    padding:0.5rem 1.5rem;
+    place-self: center;
+    cursor:pointer;
+}
+footer{
     background-color: black;
-    color:white
-  }
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:5%;
+    gap: 1rem;
 
 
+}
 
-  @media (max-width: 768px) {
+.footer-content{
+    display:grid;
+    grid-template-rows: 4;
+    
+    
+}
+
+footer nav{
+    color:white;
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
+    text-align: center;
+    margin-top: 1rem;
+
+    
+}
+.logos{
+    display:flex;
+    gap:0.5rem;    
+}
+footer p,
+.attribution{
+    color:white;
+}
+
+button:after,
+button:hover{
+    color:white;
+    background-color: black;
+}
+  @media (min-width: 720px) {
     :root{
-        --background-img:url('images/mobile/image-hero.jpg');
-
-        --deep-earth:url("images/mobile/image-deep-earth.jpg");
-        --nigth-arcade:url("images/mobile/image-night-arcade.jpg");
-        --soccer-team:url("images/mobile/image-soccer-team.jpg");
-        --grid:url("images/mobile/image-grid.jpg");
-        --above:url("images/mobile/image-from-above.jpg");
-        --pocket:url("images/mobile/image-pocket-borealis.jpg");
-        --curiosity:url("images/mobile/image-curiosity.jpg");
-        --fisheye:url("images/mobile/image-fisheye.jpg");
+        --background-img:url('images/desktop/image-hero.jpg');
     }
    
-    .header{
-        background-image: var(--background-img);
-        padding:1.5rem;
-    }
-    .navigation-bar
-    {
-        display:none;
-    }
-    .title{
-        width: 100%;
-        margin:10rem 0;
-    }
+    
+  }
 
-    .info-container img{
-        content: url('images/mobile/image-interactive.jpg');
-        width:100%;
-        
-    }
-    .info-container{
-        padding:1.5rem;
-        flex-direction: column;
-
-        
-    }
-    .info{
-        padding:2rem 0rem;
-        position:initial;
-        width: 100%;
-        text-align: center;
-        
-    }
-    .creations-container{
-        padding:1.5rem;
-        position:static;
-          
-    }
-    .creations-title{
-        flex-direction: column;
-        position:static;
-    }
+  .focus-button:after,
+  .focus-button:focus,
+  .focus-button_hover
+  {
+    text-decoration: underline;
     
-    .creations-cards{
-        position:static;
-        color:white;
-        display:flex;
-        flex-direction: column;
-        gap:1rem;
-     
-    }
-    .title-cards{
-        
-        font-size:2rem;
-        text-transform: uppercase;
-        font-weight: 300;
-        padding:2.5rem 2rem;
-        
-    
-    }
-    
-    .creations-cards,
-    .deep-earth,
-    .nigth-arcade,
-    .soccer-team,
-     .grid, 
-     .from-above,
-     .pocket,
-     .curiosity, 
-     .fisheye{
-        background-repeat:no-repeat;
-        background-size: cover;
-        position:relative;
-    
-    }
-    
-    
-    
-    .foot{
-        padding:2rem 5rem;
-        display:flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    
-    footer{
-        
-        gap:1rem;
-        
-    }
-    .footer-head{
-        
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-bottom:1rem;
-        
-    }
-    
-    .footer-bottom{
-        
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        
-    }
-    .navigation-bar-bottom{
-        flex-direction: column;
-        text-align: center;
-    }
-
-
-
-
-
-
 
 
   }

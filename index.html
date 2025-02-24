@@ -20,78 +20,124 @@
   </style>
 </head>
 <body>
-  <section class="header">
+  <div class="header">
     <div class="header-head">
-      <img src="images/logo.svg"></img>
-      <button class="hamburger-menu">☰</button> 
-      <nav class="navigation-bar">
+      <img class="logo" src="images/logo.svg" alt="Loopstudios logo">
+      <button class="hamburger-menu"><img src="images/icon-hamburger.svg"/></button> 
+      <nav class="navigation-bar hidden" >
         <ul>
-        <li><a class="focus-button" href='#'>About</a></li>
-        <li><a class="focus-button" href='#'>Careers</a></li>
-        <li><a class="focus-button" href='#'>Events</a></li>
-        <li><a class="focus-button" href='#'>Products</a></li>
-        <li><a class="focus-button" href='#'>Support</a></li>
-      </ul>
-      </nav>
-    </div>
-  <main>
-    <div class="title">
-      <h1>Immersive experiences that deliver</h1>
-    </div>
-  </section>
-  <section class="info-container">
-    <img src="images/desktop/image-interactive.jpg" alt="Loopstudio Logo">
-    <div class="info">
-      <h2>The leader in interactive VR</h2>
-      <p>
-        Founded in 2011, Loopstudios has been producing world-class virtual reality 
-        projects for some of the best companies around the globe. Our award-winning 
-        creations have transformed businesses through digital experiences that bind 
-        to their brand.
-      </p>
-    
-    </div> 
-  </section>
-  <section class="creations-container">
-    <div class="creations-title">
-      <h2>Our creations</h2>
-      <button>See all</button>
-    </div>
-    <div class="creations-cards">
-      <a class="title-cards deep-earth" href="#">Deep earth</a>
-      <a class="title-cards nigth-arcade" href="#">Nigth arcade</a>
-      <a class="title-cards soccer-team" href="#">Soccer team VR</a>
-      <a class="title-cards grid" href="#">The grid</a></li>
-      <a class="title-cards from-above" href="#">From up above VR</a>
-      <a class="title-cards pocket" href="#">Pocket borealis</a>
-      <a class="title-cards curiosity" href="#">The curiosity</a>
-      <a class="title-cards fisheye" href="#">Make it fisheye</a>
-    </div>
-  </section>
-</main>
-  
-  <footer>
-    <div class="foot">
-      <div class="footer-head">
-        <img src="images/logo.svg"></img>
-        <nav class="navigation-bar-bottom">
           <li><a class="focus-button" href='#'>About</a></li>
           <li><a class="focus-button" href='#'>Careers</a></li>
           <li><a class="focus-button" href='#'>Events</a></li>
           <li><a class="focus-button" href='#'>Products</a></li>
           <li><a class="focus-button" href='#'>Support</a></li>
-        </nav>
+        </ul>
+      </nav>
+    </div>
+    <h1>Immersive experiences that deliver</h1>
+  </div>
+  <main>
+    <section class="info-container">
+      <picture>
+        <source class="main_img" srcset="images/desktop/image-interactive.jpg" media="(min-width:600px)"/>
+        <img class="main_img" src="images/mobile/image-interactive.jpg" alt="VR demo"/>
+      </picture>
+      
+      <div class="info">
+        <h2>The leader in interactive VR</h2>
+        <p>
+          Founded in 2011, Loopstudios has been producing world-class virtual reality 
+          projects for some of the best companies around the globe. Our award-winning 
+          creations have transformed businesses through digital experiences that bind 
+          to their brand.
+        </p>
+      
+      </div> 
+    </section>
+    
+    
+  <section class="creations-container">
+    <h2 class="title">Our creations</h2>
+    <button class="see-all">See all</button>
+    <div class="card deep-earth">
+      <picture>
+        <source srcset="images/desktop/image-deep-earth.jpg" media="(min-width:600px)"/>
+        <img src="images/mobile/image-deep-earth.jpg"/>
+      </picture>
+      <h2>Deep Earth</h2>
+    </div>
+    <div class="card nigth-arcade">
+      <picture>
+        <source srcset="images/desktop/image-night-arcade.jpg" media="(min-width:600px)"/>
+        <img src="images/mobile/image-night-arcade.jpg"/>
+      </picture>
+      <h2>Night Arcade</h2>
+    </div>
+    <div class="card soccer-team">
+      <picture>
+        <source srcset="images/desktop/image-soccer-team.jpg" media="(min-width:600px)"/>
+        <img src="images/mobile/image-soccer-team.jpg"/>
+      </picture>
+      <h2>Soccer Team VR</h2>
+    </div>
+    <div class="card grid">
+      <picture>
+        <source srcset="images/desktop/image-grid.jpg" media="(min-width:600px)"/>
+        <img src="images/mobile/image-grid.jpg"/>
+      </picture>
+      <h2>The Grid</h2>
+    </div>
+    <div class="card from-above">
+      <picture>
+        <source srcset="images/desktop/image-from-above.jpg" media="(min-width:600px)"/>
+        <img src="images/mobile/image-from-above.jpg"/>
+      </picture>
+      <h2>From UP above VR</h2>
+    </div>
+    <div class="card pocket">
+      <picture>
+        <source srcset="images/desktop/image-pocket-borealis.jpg" media="(min-width:600px)"/>
+        <img src="images/mobile/image-pocket-borealis.jpg"/>
+      </picture>
+      <h2>Pocket Borealis</h2>
+    </div>
+    <div class="card curiosity">
+      <picture>
+        <source srcset="images/desktop/image-curiosity.jpg" media="(min-width:600px)"/>
+        <img src="images/mobile/image-curiosity.jpg"/>
+      </picture>
+      <h2>THE curiosity</h2>
+    </div>
+    <div class="card fisheye">
+      <picture>
+        <source srcset="images/desktop/image-fisheye.jpg" media="(min-width:600px)"/>
+        <img src="images/mobile/image-fisheye.jpg"/>
+      </picture>
+      <h2>Make it Fisheye</h2>
+    </div>
+  </section>
+</main>
+  
+  <footer>
+    <div class="footer_content">
+      <img src="images/logo.svg" alt="Loopstudios logo">
+        <nav class="navigation-bar">
+            <li><a class="focus-button" href='#'>About</a></li>
+            <li><a class="focus-button" href='#'>Careers</a></li>
+            <li><a class="focus-button" href='#'>Events</a></li>
+            <li><a class="focus-button" href='#'>Products</a></li>
+            <li><a class="focus-button" href='#'>Support</a></li>
+        </nav>  
       </div>
-      <div class="footer-bottom">
-        <div class="logos">
-          <a class="focus-button" href='#'><img src="images/icon-twitter.svg" alt="Twitter icon"></a>
-          <a class="focus-button" href='#'><img src="images/icon-facebook.svg" alt="Facebook icon"></a>
-          <a class="focus-button" href='#'><img src="images/icon-pinterest.svg" alt="Pinterest icon"></a>
-          <a class="focus-button" href='#'><img src="images/icon-instagram.svg" alt="Instagram icon"></a>
+      <div class="logos">
+        <a class="focus-button" href='#'><img src="images/icon-twitter.svg" alt="Twitter icon"></a>
+        <a class="focus-button" href='#'><img src="images/icon-facebook.svg" alt="Facebook icon"></a>
+        <a class="focus-button" href='#'><img src="images/icon-pinterest.svg" alt="Pinterest icon"></a>
+        <a class="focus-button" href='#'><img src="images/icon-instagram.svg" alt="Instagram icon"></a>
 
-        </div>
-        <p>© 2021 Loopstudios. All rights reserved.</p>
       </div>
+      <p>© 2021 Loopstudios. All rights reserved.</p>
+      
     </div>
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
